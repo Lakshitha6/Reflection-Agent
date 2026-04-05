@@ -2,6 +2,8 @@
 
 A production-grade **Corrective RAG (CRAG)** system built with **LangGraph**, **Groq (Llama 3.1)**, and **Qdrant Cloud**. This agent doesn't just retrieve data; it critiques its own knowledge and performs autonomous web searches when stored data is insufficient.
 
+![execution-chart](execution-flow.png)
+
 ![Tests](https://github.com/Lakshitha6/Reflection-Agent/actions/workflows/python-tests.yml/badge.svg)
 
 ## 🌟 Key Features
