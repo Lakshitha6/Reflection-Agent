@@ -8,10 +8,10 @@ load_dotenv()
 class GroqService(BaseLLMService):
     
     def __init__(self, model_name: str, temperature: float, max_tokens: int):
-        api_key = os.getenv("Groq_API_KEY")
+        api_key = os.getenv("GROQ_API_KEY")
 
         if not api_key:
-            raise ValueError("Groq_API_KEY not found in .env file")
+            raise ValueError("GROQ_API_KEY not found in .env file")
 
         self._llm = ChatGroq(
             api_key=api_key,
